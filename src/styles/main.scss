@@ -1,0 +1,70 @@
+.main{
+    position: relative;
+    left: 25vw;
+    width: 50vw;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+    >button{
+        :hover{
+            background-color:rgb(61, 168, 195) ;
+            color: white;
+        }
+    }
+    
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 35px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color:rgb(61, 168, 195);
+    
+  }
+  
+ 
+  
+  .searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #00B4CC;
+    text-align: center;
+    color: rgb(61, 168, 195);
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 30px;
+    
+  }
+  
+  .wrap{
+    width: 30%;
+    position: fixed;
+    top: 10vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .employee__list{
+    padding-left: 100px;
+    padding-right: 100px;
+    position: relative;
+    top: 20vh;
+    >h2{
+        text-align: center;
+    }
+  }
+
+  @media screen and (max-width :600px){
+   .main{
+    width: 80vw;
+   }
+   .wrap{
+    width: 80%;
+   }
+}
