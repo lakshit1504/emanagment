@@ -5,7 +5,6 @@ import Card from "./Card"
 const Main = () => {
     const [employee, setEmployee] = useState([])
     const [query, setQuery] = useState("")
-    console.log(query)
     const getData = async ()=> {
         const url = "https://hub.dummyapis.com/employee?noofRecords=10&idStarts=1001"; 
         
@@ -33,7 +32,7 @@ const Main = () => {
             <div className="list__cards">
                 {
                     
-                    employee.filter((employees)=>employees.firstName.toLowerCase().includes(query) ||employees.lastName.toLowerCase().includes(query)).map(employees => (
+                    employee.filter((employees)=>employees.firstName.toLowerCase().includes(query.toLowerCase()) ||employees.lastName.toLowerCase().includes(query.toLowerCase())).map(employees => (
                         <Card key={employees.id} employees={employees} />
                     ))
                 }
